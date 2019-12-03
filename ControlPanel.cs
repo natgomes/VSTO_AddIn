@@ -170,6 +170,21 @@ namespace VSTO_AddIn
             logBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             logBox.Size = new System.Drawing.Size(408, 845);
             logBox.TabIndex = 0;
+            
+            folderLoggingEnabled = verboseFolderLoggingBox.Checked;
+            itemLoggingEnabled = verboseItemLoggingBox.Checked;
+            applicationLoggingEnabled = verboseApplicationLoggingBox.Checked;
+            explorersLoggingEnabled = verboseExplorersLoggingBox.Checked;
+            explorerLoggingEnabled = verboseExplorerLoggingBox.Checked;
+            itemsLoggingEnabled = verboseItemsLoggingBox.Checked;
+            inspectorsLoggingEnabled = verboseInspectorsLoggingBox.Checked;
+            inspectorLoggingEnabled = verboseInspectorLoggingBox.Checked;
+            nameSpaceLoggingEnabled = verboseNameSpaceEventsBox.Checked;
+            foldersLoggingEnabled = verboseFoldersLoggingBox.Checked;
+            storesLoggingEnabled = verboseStoresLoggingBox.Checked;
+            trackInboxEnabled = trackInboxBox.Checked;
+            trackOutboxEnabled = trackOutboxBox.Checked;
+            trackSentItemsEnabled = trackSentItemsBox.Checked;
         }
 
         private void VerboseItemLoggingBox_CheckedChanged(object sender, EventArgs e)
